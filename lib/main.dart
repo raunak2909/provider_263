@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_263/count_provider.dart';
+import 'package:provider_263/list_page.dart';
+import 'package:provider_263/list_provider.dart';
 
 void main() {
   runApp(ChangeNotifierProvider(
-      create: (context) => CounterProvider(),
+      create: (context) => ListProvider(),
       child: const MyApp()));
 }
 
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MyHomePage(),
+      home: ListPage()
     );
   }
 }

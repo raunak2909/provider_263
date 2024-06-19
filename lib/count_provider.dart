@@ -5,12 +5,12 @@ class CounterProvider extends ChangeNotifier{
   ///state (data)
   int _counter = 0;
 
-  List<Map<String, dynamic>> _mData = [];
+  /*List<Map<String, dynamic>> _mData = [];
 
-  ///add
+  ///add -
   ///fetch
   ///update
-  ///delete
+  ///delete*/
 
 
   ///set
@@ -23,5 +23,7 @@ class CounterProvider extends ChangeNotifier{
   int getValue(){
     return _counter;
   }
+
+
 
 }
